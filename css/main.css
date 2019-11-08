@@ -9,6 +9,8 @@ h2 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  padding-bottom: 0;
+  margin: 1.5rem 0;
 }
 
 .cards {
@@ -17,6 +19,8 @@ h2 {
   list-style-type: none;
   text-align: center;
   display: flex;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .card {
@@ -43,8 +47,7 @@ h2 {
 
 .cards li {
   display: flex;
-  margin: 0 auto 1.5rem;
-  padding: 1.5rem;
+  padding: .75rem;
   background-color: #fff;
   border-right: 1px solid #333;
   text-align: left;
@@ -65,7 +68,8 @@ img {
 .cards h2 {
   display: flex;
   font-weight: lighter;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
   font-size: 1rem;
 }
 
@@ -73,12 +77,17 @@ img {
   display: flex;
   font-style: italic;
   font-size: .875rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .cards p {
   display: flex;
-  margin: 0;
   min-width: 9em;
+  margin: 0 0 1.5rem;
 }
 
 .cards div {
@@ -88,9 +97,10 @@ img {
 .cards a {
   display: flex;
   padding: .5em .75em;
-  background-color: #ccc;
+  background-color: #333;
+  border-color: #333;
   border-radius: 4px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
