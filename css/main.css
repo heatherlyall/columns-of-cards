@@ -1,13 +1,14 @@
 html {
   box-sizing: border-box;
   line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #f2f2f2;
 }
 
 h2 {
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .cards {
@@ -16,8 +17,28 @@ h2 {
   list-style-type: none;
   text-align: center;
   display: flex;
-  flex-direction: row;
-  flex-grow: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card:first-child {
+  background-color: #e2e2e2;
+  border-left: 1px solid #333;
+}
+
+.card:nth-child(2) {
+  background-color: #ccc;
+}
+
+.card:nth-child(3) {
+  background-color: #aaa;
+}
+
+.card:nth-child(4) {
+  background-color: #999;
 }
 
 .cards li {
@@ -25,37 +46,36 @@ h2 {
   margin: 0 auto 1.5rem;
   padding: 1.5rem;
   background-color: #fff;
-  border-left: 3px solid #333;
-  border-right: 3px solid #333;
+  border-right: 1px solid #333;
   text-align: left;
+  width: 25%;
 }
 
- img {
-  display: flex;
+img {
+  display: block;
   margin: 0 auto 1.5rem;
-  width: 100px;
+  width: 100%;
 }
 
-.cards strong {
-  display: flex;
-  margin-bottom: 1rem;
+.image-container {
+  width: 100px;
+  margin: 0 auto;
+}
 
+.cards h2 {
+  display: flex;
+  font-weight: lighter;
+  margin-bottom: 1rem;
   font-size: 1rem;
 }
 
-.cards dl {
-  margin-bottom: 1rem;
-  font-size: .875rem;
-}
-
-.cards dt {
+.cards h3 {
   display: flex;
-  width: 6em;
   font-style: italic;
   font-size: .875rem;
 }
 
-.cards dd {
+.cards p {
   display: flex;
   margin: 0;
   min-width: 9em;
@@ -74,11 +94,32 @@ h2 {
   text-decoration: none;
 }
 
+.btn {
+  font-size: 1.125rem;
+  padding: .4em .75em .3em;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  border-width: 3px;
+  color: #000;
+  display: inline-block;
+  margin: auto;
+  border-style: solid;
+}
+
 .btn:hover {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
 }
 
+.btn-small {
+  font-size: .875rem;
+}
+
+body {
+  flex-grow: 1;
+  margin: 0;
+}
 
 *, *::before, *::after {
   box-sizing: inherit;
